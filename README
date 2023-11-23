@@ -1,0 +1,18 @@
+Como executar o processo ETL:
+
+Two options, one is direct python script and the other is an airflow dag.
+
+direct python:
+python3 extract.py com a pasta "Raw" na mesma excecutive os directory
+
+
+airflow dag:
+from the command line : airflow trigger_dag etl_process
+or trigger manually with the web UI
+
+
+notas:
+* Usei o selenium por conta de HTTP 403 error, que significa que o server recebeu o
+pedido mas nao o-auterizou.
+* Os dados sobre os melhores e piores meses ficaram
+ ocultos em partes das corridas do programa, entao coloquei em comment.
